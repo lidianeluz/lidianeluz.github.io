@@ -1,0 +1,96 @@
+.custom-navbar {
+	background: #ad0087;
+}
+
+.hero {
+	height: 400px;
+	background: linear-gradient(to right, #ad0090, #c27ad8);
+}
+
+.text-highlight {
+	color: #ffd700;
+}
+
+a.social-icon:hover {
+	transform: scale(1.2);
+	transition: 0.3s;
+}
+
+.social-icon {
+	font-size: 2rem;
+	margin: 0 15px;
+	transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+	transform: scale(1.2);
+	color: #ad0087;
+}
+
+.hero {
+	height: 60vh;
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	background: linear-gradient(to right, #ad0090, #c27ad8);
+}
+
+@media (max-width: 768px) {
+	.hero {
+		height: 60vh;
+	}
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar li {
+	margin-bottom: 8px;
+}
+
+.sidebar a,
+.footer a {
+	position: relative;
+	color: #7A5C94;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.sidebar a::after,
+.footer a::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: -2px;
+	left: 0;
+	background-color: #9685BA;
+	transition: width 0.3s ease;
+}
+
+.sidebar a:hover,
+.sidebar a:focus,
+.footer a:hover,
+.footer a:focus {
+	color: #9685BA;
+}
+
+.sidebar a:hover::after,
+.sidebar a:focus::after,
+.footer a:hover::after,
+.footer a:focus::after {
+	width: 100%;
+}
+
+.footer {
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 40px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
